@@ -1,0 +1,20 @@
+[
+  {
+      "titulo": "Finalizar relatório",
+      "descricao": "Finalizar o relatório de vendas do trimestre.",
+      "dataConclusao": "2025-03-10",
+      "status": "Em Progresso"
+  },
+  {
+      "titulo": "Reunião de equipe",
+      "descricao": "Reunião para discutir os objetivos do mês.",
+      "dataConclusao": "2025-03-07",
+      "status": "Pendente"
+  },
+  {
+      "titulo": "Atualizar site",
+      "descricao": "Atualizar o conteúdo do site com as novas promoções.",
+      "dataConclusao": "2025-03-15",
+      "status": "Concluída"
+  }
+]

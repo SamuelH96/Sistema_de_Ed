@@ -1,0 +1,160 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(135deg, #2e8b57, #3cb371);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.tarefa img {
+    height: 60px;
+    border-radius: 30px;
+}
+
+.modulo {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.modulo:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #2e8b57;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e55343;
+}
+
+.button1{
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 10px; 
+    float: right;
+
+}
+
+.button1:hover {
+    background-color: #e55343;
+}
+
+
+#ver-tarefas {
+    display: block;
+    margin: 20px 0;
+    background-color: #3cb371;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#ver-tarefas:hover {
+    background-color: #2e8b57;
+}
+
+.footer {
+    background: linear-gradient(135deg, #2e8b57, #3cb371);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.content{
+    flex-grow: 1;
+}
+
+#task-suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    display: none;
+    z-index: 10;
+}
+#task-suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+#task-suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+#delete-all-tasks{
+    background-color: red; 
+    color: white; 
+    float: right;
+    float: right;
+    margin-left: 10px; 
+}
