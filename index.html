@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Sistema de Gerenciamento de Tarefas</h1>
+        </div>
+        <div class="tarefa">
+            <img src="../imagem/tarefa.png" alt="Imagem tarefas">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="modulo">
+            <h2>Adicionar Tarefa</h2>
+            <form id="add-task-form">
+                <div class="form-group">
+                    <label for="task-title">Título:</label>
+                    <input type="text" id="task-title" name="task-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-description">Descrição:</label>
+                    <input type="text" id="task-description" name="task-description" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-responsible">Responsável:</label>
+                    <input type="text" id="task-responsible" name="task-responsible" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-priority">Prioridade:</label>
+                    <select id="task-priority" required>
+                        <option value="Alta">Alta</option>
+                        <option value="Média">Média</option>
+                        <option value="Baixa">Baixa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="task-due-date">Data de Conclusão:</label>
+                    <input type="date" id="task-due-date" name="task-due-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="task-status">Status:</label>
+                    <select id="task-status" required>
+                        <option value="Pendente">Pendente</option>
+                        <option value="Em Progresso">Em Progresso</option>
+                        <option value="Concluída">Concluída</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Adicionar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modulo">
+            <h2>Remover Tarefa</h2>
+            <form id="remove-task-form">
+                <div class="form-group">
+                    <label for="remove-title">Título:</label>
+                    <input type="text" id="remove-title" name="remove-title">
+                    <div id="task-suggestions"></div> 
+                </div>
+                <div class="buttons">
+                    <button type="submit">Remover</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modulo">
+            <h2>Visualizar Tarefas</h2>
+            <button type="button" id="ver-tarefas" onclick="location.href='visualizar.html'">Visualizar Tarefas</button>
+        </div>
+
+        <div class="modulo">
+            <h2>Navegação entre Tarefas</h2>
+         
+            <div id="tarefa-atual">
+              
+            </div>
+        
+            
+            <div id="task-navigation-message">
+          
+            </div>
+      
+            <button id="prev-task">Anterior</button>
+            <button id="next-task">Próxima</button>
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Sistema de Gerenciamento de Tarefas. Todos os direitos reservados.</p>
+    </div>
+
+    <script src="../javascript/script.js" defer></script>
+</body>
+</html>
